@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<title>Madras Bristol</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
+    <style type="text/css">.close i{ display: none !important;} 
+#contact-form button{ display: none;}</style>
+<script>
+        function validateForm() {
+            // Get form elements by their IDs
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+
+            // Regular expressions for validation
+            var nameRegex = /^[A-Za-z\s]+$/;
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            var phoneRegex = /^\d{10}$/;
+
+            // Validation checks
+            if (!name.match(nameRegex)) {
+                alert("Please enter a valid name.");
+                return false;
+            }
+
+            if (!email.match(emailRegex)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!phone.match(phoneRegex)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+
+         
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+  <div class="page-wrapper"> 
+  
+    <!-- Main Header-->
+    <header class="main-header header-down">
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="inner clearfix">
+                    <div class="top-left clearfix">
+                        <ul class="top-info clearfix">
+                            <li><i class="icon far fa-map-marker-alt"></i> 114 Rodway Rd, Patchway, Bristol BS34 5PG</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                        <ul class="top-info clearfix">
+                            <!--<li style="color:#000 !important; background-color: #fcb217; font-weight: 600; padding:0px 20px 0px 20px;"><a href="bucket-biryani.html" style="color:#000;">Bucket Biryani</a></li>-->
+                            <li style="line-height: 20px;">Dine-in & Takeaway Available | Tuesday Closed</li>
+                            <li style="color:#fff !important;"><i class="icon far fa-phone"></i> 0117 969 9777</li>
+                            <li><a href="mailto:booking@madrasbristol.com"><i class="icon far fa-envelope"></i> booking@madrasbristol.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Upper -->
+        <div class="header-upper">        
+            <div class="auto-container">
+                <!-- Main Box -->
+                <div class="main-box clearfix">
+                    <!--Logo-->
+                    <div class="logo-box">
+                         <div class="logo"><a href="index.html" title="Madras Brisol"><img src="images/logo.png" alt="" title="Madras Brisol"></a></div>
+                    </div>
+
+                    <div class="nav-box clearfix">
+                        <!--Nav Outer-->
+                        <div class="nav-outer clearfix">         
+                            <nav class="main-menu">
+                                <ul class="navigation clearfix">
+                                    <li ><a href="index.html">Home</a>
+                                    </li>
+                                     <li><a href="about-us.html">About Us</a></li>
+                                    <li class=""><a href="our-menus.html">Our Menus</a>
+                                       
+                                    </li>
+                                    <li><a href="https://goodeats.io/Patchway">Order Now</a></li>
+
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                  <!--  <li><a href="careers.html">Careers</a></li>-->
+                                    <li ><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        <!--Nav Outer End-->
+
+                        <div class="links-box clearfix">
+                            <div class="link link-btn">
+                                <a href="book-table.html" class="theme-btn btn-style-one clearfix">
+                                    <span class="btn-wrap">
+                                        <span class="text-one">Book a Table</span>
+                                        <span class="text-two">Book a Table</span>
+                                    </span>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Hidden Nav Toggler -->
+                        <div class="nav-toggler">
+                            <button class="hidden-bar-opener">
+                                <span class="hamburger">
+                                    <span class="top-bun"></span>
+                                    <span class="meat"></span>
+                                    <span class="bottom-bun"></span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Main Header -->
+    
+    <!--Menu Backdrop-->
+    <div class="menu-backdrop"></div>
+
+    <!-- Hidden Navigation Bar -->
+    <section class="hidden-bar">
+        <!-- Hidden Bar Wrapper -->
+        <div class="inner-box">
+            <div class="cross-icon hidden-bar-closer"><span class="far fa-close"></span></div>
+            
+            <!-- .Side-menu -->
+            <div class="side-menu">
+                 <ul class="navigation clearfix">
+                    <li class="current"><a href="index.html">Home</a>
+                    </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-menus.html">Our Menus</a>
+                       
+                    </li>
+                   <li><a href="https://goodeats.io/Patchway">Order Now</a></li>
+                   <li><a href="book-table.html">Book a Table</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+              <!--  <li><a href="careers.html">Careers</a></li>-->
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div><!-- /.Side-menu -->
+            
+            <h2>Visit Us</h2>
+            <ul class="info">
+                <li> 114 Rodway Rd, Patchway, Bristol BS34 5PG</li>
+        
+                <li><a href="mailto:booking@madrasbristol.com">booking@madrasbristol.com</a></li>
+            </ul>
+            <div class="separator"><span></span></div>
+            <div class="booking-info">
+                <div class="bk-title">Booking request</div>
+                <div class="bk-no"><a href="#">0117 969 9777</a></div>
+            </div>
+        
+        </div><!-- / Hidden Bar Wrapper -->
+    </section>
+    <!-- / Hidden Bar -->
+
+
+     <!-- Inner Banner Section -->
+    <section class="inner-banner">
+        <div class="image-layer" style="background-image: url(images/background/banner-image-3.jpg);"></div>
+        <div class="auto-container">
+            <div class="inner">
+                <div class="subtitle"><span>book your table</span></div>
+                <div class="pattern-image"><img src="images/icons/separator.svg" alt="" title=""></div>
+                <h1><span>Reservation</span></h1>
+            </div>
+        </div>
+    </section>
+    <!--End Banner Section -->
+
+    <!--Online Reservation Section-->
+    <section class="online-reservation inner-page" >
+        <div class="left-bg"><img src="images/background/bg-5.png" alt="" title=""></div>
+        <div class="right-bg"><img src="images/background/bg-6.png" alt="" title=""></div>
+        <div class="auto-container">
+            <div class="title-box centered">
+                <div class="subtitle"><span>Reservation</span></div>
+                <div class="pattern-image"><img src="images/icons/separator.svg" alt="" title=""></div>
+                <h2 >Book A Table</h2>
+                <div class="text desc" >Dine-in & Takeaway Available | Tuesday Closed</div>
+                <div class="text request-info" >Booking request <a href="#">0117 969 9777</a> or fill out the form</div>
+            </div>
+            <div class="default-form reservation-form" >
+            <form id="contact-form2" method="post" action="/api/bookcontact" role="form" class="contact-form2" style="margin-top:20px;">
+                 <div class="messages"></div>
+                                    <div class="row clearfix">
+                                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                            <div class="field-inner">
+                                                 <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required." style="width:100%;" pattern="[A-Za-z\s]+">
+                                                 <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                            <div class="field-inner">
+                                               <input type="tel" id="phone" name="phone" class="form-control"  placeholder="Mobile Number " maxlength="15" required="required" data-error="Valid mobile number is required." style="width:100%; padding-left:20px;" pattern="^\d{10,15}$">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                          <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                            <div class="field-inner">
+                                        <input type="text" id="email" name="email"  class="form-control" placeholder="Email" required="required" data-error="Valid email is required." style="width:100%;" 
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                            <div class="field-inner">
+                                                <span class="alt-icon far fa-user"></span>
+                                             <select id="form_person" name="person" class="l-icon form-control" required="required">
+                                                  <option value="">Select No of Person</option>
+                                        <option value="1 Person">1 Person</option>
+                                        <option value="2 Person">2 Person</option>
+                                         <option value="3 Person">3 Person</option>
+                                          <option value="4 Person">4 Person</option>
+                                           <option value="5 Person">5 Person</option>
+                                            <option value="6 Person">6 Person</option>
+                                             <option value="7 Person">7 Person</option>
+                                    
+                                        <option value="Other">Other</option>
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                                <span class="arrow-icon far fa-angle-down"></span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-4 col-md-6 col-sm-12">
+                                            <div class="field-inner">
+                                                <span class="alt-icon far fa-calendar"></span>
+                                                <input class="l-icon datepicker form-control" type="text" name="date" value="" placeholder="DD-MM-YYYY" required>
+                                                 <div class="help-block with-errors"></div>
+                                                <span class="arrow-icon far fa-angle-down"></span>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                                            <div class="field-inner">
+                                                <span class="alt-icon far fa-clock"></span>
+                                               <select id="form_time l-icon" name="time" class="l-icon form-control" required="required">
+                                                    <option value="">Select Time</option>
+                                      
+                                        <option value="5:00 pm">5:00 pm</option>
+                                          <option value="5:30 pm">5:30 pm</option>
+                                        <option value="6:00 pm">6:00 pm</option>
+                                           <option value="6:30 pm">6:30 pm</option>
+                                        <option value="7:00 pm">7:00 pm</option>
+                                          <option value="7:30 pm">7:30 pm</option>
+                                        <option value="8:00 pm">8:00 pm</option>
+                                          <option value="8:30 pm">8:30 pm</option>
+                                        <option value="9:00 pm">9:00 pm</option>
+                                            <option value="9:30 pm">9:30 pm</option>
+                                        <option value="10:00 pm">10:00 pm</option>
+                                    
+                                    
+                                        <option value="Other">Other</option>
+                                                </select>
+                                                 <div class="help-block with-errors"></div>
+                                                <span class="arrow-icon far fa-angle-down"></span>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <div class="field-inner">
+                                                <textarea id="form_message" name="message" placeholder="Message (Optional)" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <div class="field-inner">
+                                                <input type="submit" class="theme-btn btn-style-one btn-send2" value="Send message">
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+            </div>
+        </div>
+
+      
+    </section>
+
+    
+
+  <!--Main Footer-->
+  <footer class="main-footer" style="background-color:#000 !important;">
+        <div class="image-layer" ></div>
+        <div class="upper-section">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Footer Col-->
+                    <div class="footer-col info-col col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="content">
+                                <div class="logo"><a href="index.html" title="Madras Brisol"><img src="images/logo.png" alt="" title="Madras Brisol" style="padding-top:20px;"></a></div>
+                                <div class="info">
+                                    <ul>
+                                        <li> 114 Rodway Rd, Patchway, Bristol BS34 5PG</li>
+                                        <li><a href="mailto:booking@madrasbristol.com">booking@madrasbristol.com</a></li>
+                                        <li><a href="#">Booking Request : 0117 969 9777</a></li>
+                                <li>
+Dine-in & Takeaway Available | Tuesday Closed</li>
+                                
+                                    </ul>
+                                </div>
+                                <div class="separator"><span></span><span></span><span></span></div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!--Footer Col-->
+                    <div class="footer-col links-col col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <ul class="links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="our-menus.html">Our Menus</a></li>
+                                <li><a href="https://goodeats.io/Patchway">Order Now</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                 <!--  <li><a href="careers.html">Careers</a></li>-->
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                 <li><a href="book-table.html">Book a Table</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Footer Col-->
+                    <div class="footer-col links-col last col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="team-block ">
+                    
+                       
+                             <div class="designation">Follow Us</div>
+                                    <!-- Social Box -->
+                                    <ul class="social-box">
+                                         <li><a href="http://bit.ly/40BBD1A" class="fab "><i class="fa fa-facebook" style="font-size:24px; padding:10px;"></i></a></li>
+                                        <li><a href="https://bit.ly/3Axjszx" class="fab"><i class="fa fa-instagram" style="font-size:24px; padding:9px 10px 11px 10px;"></i></a></li>
+                                        <li><a href="https://bit.ly/3YF1xPi" class="fab "><i class="fa fa-whatsapp" style="font-size:24px;  padding:9px 10px 11px 10px;"></i></a></li>
+                                      
+                                    </ul>
+                              
+                     
+                   
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="padding-bottom:30px;" >
+            <div class="auto-container" >
+                <div class="copyright" >Copyrights © 2023 - Madras Bristol. All Rights Reserved. Designed By <img src="images/mangoe.png" style="padding-right:5px;"><a href="https://mangoe.in/" target="_blank">mangoe.</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+<!--End pagewrapper--> 
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/custom-script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>
+</body>
+
+
+</html>
