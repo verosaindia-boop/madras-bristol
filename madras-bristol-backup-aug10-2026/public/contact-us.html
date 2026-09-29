@@ -261,7 +261,7 @@ Sunday 5 PM to 10 PM</div>
                                     <div class="row clearfix">
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                             <div class="field-inner">
-                                                 <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required." style="width:100%;" pattern="[A-Za-z]+">
+                                                 <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" data-error="Name is required." style="width:100%;" pattern="[A-Za-z ]+">
                                                  <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -276,7 +276,7 @@ Sunday 5 PM to 10 PM</div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                             <div class="field-inner">
-                                               <input type="tel" id="phone" name="phone" class="form-control"  placeholder="Mobile Number " maxlength="10" required="required" data-error="10 digit mobile number is required." style="width:100%; padding-left:20px;" pattern="^\d{10}$">
+                                               <input type="tel" id="phone" name="phone" class="form-control"  placeholder="Mobile Number " maxlength="15" required="required" data-error="Enter a valid phone number." style="width:100%; padding-left:20px;" pattern="[0-9+ ]{10,15}">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -405,10 +405,7 @@ Booking closed on Tuesdays. Available on all other days.</li>
 <script src="js/parallax.min.js"></script>
 <script src="js/custom-script.js"></script>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="validator.js"></script>
-        <script src="contact1.js"></script>
+<script src="js/form-submit.js"></script>
 </body>
 
 </html>
