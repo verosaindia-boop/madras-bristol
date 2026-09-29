@@ -17,7 +17,24 @@
 <link href="css/responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style type="text/css"></style>
+<style>
+    .delivery-options { max-width: 300px; margin: 32px auto 0; }
+    .delivery-options .designation { margin-bottom: 14px; }
+    .delivery-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .delivery-links a {
+        display: flex; align-items: center; justify-content: center; gap: 7px;
+        min-height: 54px; padding: 9px 7px; border-radius: 7px;
+        background: #f6f4ef; color: #1d1d1d; font-size: 12px;
+        font-weight: 800; line-height: 1.2; text-decoration: none;
+        transition: background 200ms ease, transform 200ms ease;
+    }
+    .delivery-links a:hover, .delivery-links a:focus-visible {
+        background: #fcb217; color: #1d1d1d; transform: translateY(-2px);
+    }
+    .delivery-links img { width: 23px; height: 23px; flex: none; }
+    .delivery-links .orderyoyo { font-size: 15px; letter-spacing: -0.04em; white-space: nowrap; }
+    .delivery-links .orderyoyo span { color: #e45a25; }
+</style>
 </head>
 
 <body>
@@ -193,7 +210,6 @@
                     <ul class="tab-buttons clearfix">
                         <li class="tab-btn active-btn" data-tab="#tab-1" style="margin-bottom: 10px;"><span>Dining</span></li>
                        
-                        <li class="tab-btn " data-tab="#tab-2" style="margin-bottom: 10px;"><span>Takeaway</span></li>
                         <li class="tab-btn" data-tab="#tab-4" style="margin-bottom: 10px;"><span>Weekend Specials</span></li>
                   
                         
@@ -222,17 +238,6 @@
 
 
 
-
-
-
-
-<div class="tab" id="tab-2">
-                        <div class="row clearfix">
-                            <div class="menu-col col-lg-12 col-md-12 col-sm-12" style="text-align:center;">
-                                  <img src="images/take1.jpg"><img src="images/take2.jpg">                     
-                            </div>
-                        </div>
-                    </div>    
 
 
 
@@ -359,7 +364,15 @@ Booking closed on Tuesdays. Available on all other days.</li>
                                         <li><a href="https://bit.ly/3YF1xPi" class="fab "><i class="fa fa-whatsapp" style="font-size:24px;  padding:9px 10px 11px 10px;"></i></a></li>
                                       
                                     </ul>
-                              
+                                    <div class="delivery-options">
+                                        <div class="designation">Order Online</div>
+                                        <div class="delivery-links">
+                                            <a href="https://www.ubereats.com/gb/store/madras/SKzJTjM3UD6v0IAyCkIHzw" target="_blank" rel="noopener noreferrer" aria-label="Order Madras Bristol on Uber Eats"><img src="images/delivery/ubereats.svg" alt="">Uber Eats</a>
+                                            <a href="https://madrasbristol.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="Order Madras Bristol with OrderYOYO"><span class="orderyoyo">Order<span>YOYO</span></span></a>
+                                            <a href="https://deliveroo.co.uk/menu/bristol/charlton-hayes/madras-bristol-114-rodway-road" target="_blank" rel="noopener noreferrer" aria-label="Order Madras Bristol on Deliveroo"><img src="images/delivery/deliveroo.svg" alt="">Deliveroo</a>
+                                            <a href="https://www.just-eat.co.uk/restaurants-madras-bristol/menu" target="_blank" rel="noopener noreferrer" aria-label="Order Madras Bristol on Just Eat"><img src="images/delivery/justeat.svg" alt="">Just Eat</a>
+                                        </div>
+                                    </div>
                      
                    
                 </div>
