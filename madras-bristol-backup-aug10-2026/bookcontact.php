@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'info@madrasbristol.com';
-        $mail->Password   = 'Madras@2026'; // keep secure
+        $mail->Password = getenv('SMTP_PASS'); // keep secure
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 

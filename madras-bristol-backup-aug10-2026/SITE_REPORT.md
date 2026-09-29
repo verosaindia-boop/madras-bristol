@@ -119,7 +119,7 @@ vercel dev
 
 ### Environment Variables
 - `EMAIL_USER`: Defaults to `info@madrasbristol.com`
-- `EMAIL_PASSWORD`: Defaults to `Madras@2026` (for development only)
+- `EMAIL_PASSWORD`: Set this securely in Vercel; no password is committed.
 
 ## Configuration Files
 
