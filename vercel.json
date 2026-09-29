@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/contact.php", "destination": "/api/contact" },
+    { "source": "/bookcontact.php", "destination": "/api/bookcontact" }
+  ]
+}
